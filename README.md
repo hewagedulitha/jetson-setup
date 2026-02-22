@@ -1,9 +1,8 @@
 # jetson-setup
 
-`
-conda activate rl
-jetson-containers run -v /home/hewaged/ae-mnt:/ae --device=/dev/ttyTHS1  $(autotag l4t-pytorch)
-`
+`conda activate rl`
+
+`jetson-containers run -v /home/hewaged/ae-mnt:/ae --device=/dev/ttyTHS1  $(autotag l4t-pytorch)`
 
 `cd /ae/aae-train-donkeycar/ && pip install -e . --index-url https://pypi.org/simple
 pip install numpy==1.26.4 --index-url https://pypi.org/simple
@@ -22,26 +21,23 @@ cd /volume/ros2_ws/ && . install/local_setup.bash`
 
 run this line after starting the image saver docker
 
-`
-cd /ae/ && ros2 run realsense2_camera realsense2_camera_node
-`
+`cd /ae/ && ros2 run realsense2_camera realsense2_camera_node`
+
 if ROS is not working across docker containers, open new terminal on the same container
 
-`
-sudo docker ps # get container name for the realsense container instance
-sudo docker exec -it jetson_container_20260216_101449 bash
-`
+`sudo docker ps # get container name for the realsense container instance
+sudo docker exec -it jetson_container_20260216_101449 bash`
+
 source ros installation
-`
-source /opt/ros/humble/install/setup.bash
-`
+
+`source /opt/ros/humble/install/setup.bash`
+
 source image node
 
 `cd /ae/image_ws/
 source install/setup.bash
 pip3 install numpy==1.21.5
-ros2 run py_srvcli2 subscriber
-`
+ros2 run py_srvcli2 subscriber`
 
 
 `sudo docker run -it -v /home/hewaged/ae-mnt:/ae realsense_ros:latest-l4t-r36.4.4
@@ -56,4 +52,5 @@ source install/setup.bash
 ros2 run py_srvcli2 subscriber`
 
 OR
+
 `cd ae/ && ./save_image.sh`
