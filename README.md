@@ -17,7 +17,9 @@
 
 `cd /ae/`
 
-`env "PATH=$PATH" python3 nav.py`
+`env "PATH=$PATH" python3 nav.py [dir_name] [max_steps]`
+
+`python3 create_run_mp4.py [dir_name]`
 
 
 start realsense container
