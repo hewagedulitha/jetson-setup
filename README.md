@@ -40,8 +40,11 @@ source ros installation
 source image node
 
 `cd /ae/image_ws/`
+
 `source install/setup.bash`
+
 `pip3 install numpy==1.21.5`
+
 `ros2 run py_srvcli2 subscriber`
 
 
