@@ -39,10 +39,10 @@ source ros installation
 
 source image node
 
-`cd /ae/image_ws/
-source install/setup.bash
-pip3 install numpy==1.21.5
-ros2 run py_srvcli2 subscriber`
+`cd /ae/image_ws/`
+`source install/setup.bash`
+`pip3 install numpy==1.21.5`
+`ros2 run py_srvcli2 subscriber`
 
 
 `sudo docker run -it -v /home/hewaged/ae-mnt:/ae realsense_ros:latest-l4t-r36.4.4
