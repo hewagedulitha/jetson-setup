@@ -14,6 +14,7 @@ pip3 install pyserial --index-url https://pypi.org/simple
 cd /ae/
 env "PATH=$PATH" python3 nav.py
 `
+
 start realsense container
 
 `conda activate rl`
