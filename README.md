@@ -29,8 +29,9 @@ run this line after starting the image saver docker
 
 if ROS is not working across docker containers, open new terminal on the same container
 
-`sudo docker ps # get container name for the realsense container instance
-sudo docker exec -it jetson_container_20260216_101449 bash`
+`sudo docker ps # get container name for the realsense container instance`
+
+`sudo docker exec -it jetson_container_20260216_101449 bash`
 
 source ros installation
 
