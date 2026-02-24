@@ -4,16 +4,21 @@
 
 `jetson-containers run -v /home/hewaged/ae-mnt:/ae --device=/dev/ttyTHS1  $(autotag l4t-pytorch)`
 
-`cd /ae/aae-train-donkeycar/ && pip install -e . --index-url https://pypi.org/simple
-pip install numpy==1.26.4 --index-url https://pypi.org/simple
+`cd /ae/aae-train-donkeycar/ && pip install -e . --index-url https://pypi.org/simple`
+
+`pip install numpy==1.26.4 --index-url https://pypi.org/simple`
 `
 
-`cd ..
-pip install stable-baselines3 --index-url https://pypi.org/simple
-pip3 install pyserial --index-url https://pypi.org/simple 
-cd /ae/
-env "PATH=$PATH" python3 nav.py
-`
+`cd ..`
+
+`pip install stable-baselines3 --index-url https://pypi.org/simple`
+
+`pip3 install pyserial --index-url https://pypi.org/simple`
+
+`cd /ae/`
+
+`env "PATH=$PATH" python3 nav.py`
+
 
 start realsense container
 
