@@ -14,10 +14,13 @@ pip3 install pyserial --index-url https://pypi.org/simple
 cd /ae/
 env "PATH=$PATH" python3 nav.py
 `
+start realsense container
 
-`conda activate rl
-jetson-containers run -v volume:/volume  -v /home/hewaged/ae-mnt:/ae  $(autotag realsense_ros)
-cd /volume/ros2_ws/ && . install/local_setup.bash`
+`conda activate rl`
+
+`jetson-containers run -v volume:/volume  -v /home/hewaged/ae-mnt:/ae  $(autotag realsense_ros)`
+
+`cd /volume/ros2_ws/ && . install/local_setup.bash`
 
 run this line after starting the image saver docker
 
